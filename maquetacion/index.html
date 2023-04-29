@@ -4,29 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link hrel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <title>Xacademy Clase 1 maquetacion</title>
     <style>
         body {
             margin: 0;
+            font-size: 16px;
         }
         p {
-            margin-right: 40px;
+            margin-right: 2.5em;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+        }
+      
+        #header-right {
+            height: 2em;
         }
         h1 {
             margin: 0px 400px;
             text-align: center;
+            display: block;
+            box-sizing: border-box;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            font-weight: 600;
         }
         button.redondo {
             background-color: white;
             border: 1px solid black;
             border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
+            
+            height: 2em;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            
+        }
+        button.redondo-violeta{
+            background-color: white;
+            border: 1px solid #6b53f0;
+            border-radius: 25px;
+            
+            height: 2em;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
+            
+        }
+        .texto-boton-redondo-violeta{
+            color: #6b53f0;
+            font-family: 'Inter', Arial, Helvetica, sans-serif;
         }
         div#introduction-actions {
             display: flex;
             justify-content: center;
         }
+        
+        @media (width>= 2000px){
+            p {
+            margin-right: 5em;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -37,10 +73,11 @@
         <div id="header-right" style="display: flex; align-items: center;">
             <p>Nosotros</p>
             <p>Programas</p>
-            <p>Capaciontaciones</p>
+            <p>Capacitaciones</p>
             <p>Alianzas</p>
             <p>Contacto</p>
             <button class="redondo">Sumate +</button>
+            
         </div>
     </div>
     <div id="introduction" style="padding: 48px;">
@@ -49,8 +86,14 @@
         </div>
         <div id="introduction-actions" style="margin-top: 25px;">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo-violeta" style="margin-left: 14px;">
+                <span class="texto-boton-redondo-violeta">Sumate + </span>
+
+                </button>
         </div>
     </div>
 </body>
+<script src="./index.js">
+    
+</script>
 </html>
